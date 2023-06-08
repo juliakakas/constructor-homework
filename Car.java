@@ -1,0 +1,42 @@
+public class Car {
+    private String brand;
+    private String model;
+    private int year;
+
+    // Paraméteres konstruktor
+    public Car(String make, String model, int year) {
+        this.brand = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    // Default (alapértelmezett konstruktor)
+    public Car() {
+        this("Unknown", "Unknown", 0); // Meghívom a paraméteres konstruktort
+    }
+
+    // Getterek és setterek
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+}
